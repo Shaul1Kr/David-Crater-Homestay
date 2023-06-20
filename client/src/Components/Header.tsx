@@ -1,38 +1,48 @@
-import logo from "../assets/logo-color.svg";
+import logo from "../assets/logo-color.png";
 import styled from "styled-components";
 
 const buttons = [
-  { id: 1, href: "1", label: "1" },
-  { id: 2, href: "2", label: "2" },
-  { id: 13, href: "13", label: "13" },
-  { id: 14, href: "14", label: "14" },
+  { label: "Home" },
+  { label: "Rooms" },
+  { label: "Tours & Safaris" },
+  { label: "Book" },
+  { label: "More" },
 ];
 
 const Header = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  height: 10rem;
+  background-color: #3674aa;
+  gap: 3rem;
 `;
 
 const Logo = styled.img`
   width: 20%;
 `;
 
+const Buttons = styled.div``;
+
 const Button = styled.button`
-  background-color: #000;
-  color: white;
-  width: 20%;
+  border: 0;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: 2rem;
+  :hover {
+    color: blue;
+  }
 `;
 
 const HeaderComponent = () => {
   return (
     <Header>
       <Logo src={logo} alt="Logo" />
-      <div className="buttons">
+      <Buttons>
         {buttons.map((button) => (
           <Button>{button.label}</Button>
         ))}
-      </div>
+      </Buttons>
     </Header>
   );
 };
