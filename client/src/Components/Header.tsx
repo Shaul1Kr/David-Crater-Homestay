@@ -1,4 +1,4 @@
-import logo from "../assets/logo-color.png";
+import logo from "../assets/logos/logo-color.png";
 import styled from "styled-components";
 
 const buttons = [
@@ -13,9 +13,9 @@ const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10rem;
   background-color: #3674aa;
   gap: 3rem;
+  padding: 1rem;
 `;
 
 const Logo = styled.img`
@@ -29,6 +29,7 @@ const Button = styled.button`
   background-color: inherit;
   cursor: pointer;
   font-size: 2rem;
+  outline-style: none;
   :hover {
     color: blue;
   }
