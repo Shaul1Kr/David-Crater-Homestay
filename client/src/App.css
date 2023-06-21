@@ -33,3 +33,18 @@
 .read-the-docs {
   color: #888;
 }
+
+.react-datepicker-wrapper {
+  cursor: pointer;
+}
+
+.react-datepicker__view-calendar-icon input {
+  cursor: pointer;
+  padding: 0.4rem !important;
+}
+
+.react-datepicker__input-container {
+  display: flex !important;
+  width: fit-content;
+  justify-content: flex-end;
+}

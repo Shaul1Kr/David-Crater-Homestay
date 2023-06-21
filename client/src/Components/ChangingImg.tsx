@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
+import { Link } from "react-scroll";
 import img1 from "../assets/Pictures/IMG1.jpg";
 import img2 from "../assets/Pictures/IMG2.jpg";
 import img3 from "../assets/Pictures/IMG3.jpg";
@@ -9,7 +10,7 @@ const images = [img1, img2, img3, img4];
 
 const ImageContainer = styled.div`
   position: relative;
-  display: inline-block;
+  display: flex;
 `;
 
 const Image = styled.img`
@@ -56,7 +57,18 @@ const ChangingImg = () => {
     <ImageContainer>
       <Image src={images[currentIndex]} alt="img" />
       <TextOverlay>David Crater Homestay</TextOverlay>
-      <ExploreOverlay>Explore the BEST hostel in Lushoto</ExploreOverlay>
+      <ExploreOverlay>
+        <Link
+          activeClass="active"
+          className="test1"
+          to="test1"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          Explore the BEST hostel in Lushoto
+        </Link>
+      </ExploreOverlay>
     </ImageContainer>
   );
 };

@@ -13,12 +13,16 @@
     "@types/react-bootstrap": "^0.32.32",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
+    "react-datepicker": "^4.14.1",
     "react-dom": "^18.2.0",
+    "react-scroll": "^1.8.9",
     "styled-components": "^5.3.10"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
+    "@types/react-datepicker": "^4.11.2",
     "@types/react-dom": "^18.0.11",
+    "@types/react-scroll": "^1.8.7",
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.59.0",
     "@typescript-eslint/parser": "^5.59.0",
