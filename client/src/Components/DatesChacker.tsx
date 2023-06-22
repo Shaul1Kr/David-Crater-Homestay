@@ -24,10 +24,14 @@ const NumberInput = styled.input`
 `;
 
 const Search = styled.button`
-  padding: 0.4rem 4rem;
+  padding: 0.5rem 4rem;
   height: fit-content;
   margin-top: 1.5rem;
   background-color: cornflowerblue;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  text-decoration: none;
 `;
 
 const Label = styled.p`
