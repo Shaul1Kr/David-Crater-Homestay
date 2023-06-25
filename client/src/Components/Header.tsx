@@ -1,12 +1,13 @@
 import logo from "../assets/logos/logo-color.png";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const buttons = [
-  { label: "Home" },
-  { label: "Rooms" },
-  { label: "Tours & Safaris" },
-  { label: "Book" },
-  { label: "More" },
+  { label: "Home", link: "" },
+  { label: "Rooms", link: "Rooms" },
+  { label: "Tours & Safaris", link: "" },
+  { label: "Book", link: "" },
+  { label: "More", link: "" },
 ];
 
 const Header = styled.div`
@@ -41,7 +42,9 @@ const HeaderComponent = () => {
       <Logo src={logo} alt="Logo" />
       <Buttons>
         {buttons.map((button) => (
-          <Button>{button.label}</Button>
+          <Button>
+            <Link to={button.link}>{button.label}</Link>
+          </Button>
         ))}
       </Buttons>
     </Header>

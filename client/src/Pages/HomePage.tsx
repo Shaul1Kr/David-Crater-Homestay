@@ -1,6 +1,5 @@
 import Book from "../Components/Book";
 import ChangingImg from "../Components/ChangingImg";
-import Header from "../Components/Header";
 import styled from "styled-components";
 import Rooms from "../Components/Rooms";
 import BookARooms from "../Components/BookARoom";
@@ -15,7 +14,6 @@ const Page = styled.div`
 const HomePage = () => {
   return (
     <Page>
-      <Header />
       <ChangingImg />
       <Book />
       <Rooms />
