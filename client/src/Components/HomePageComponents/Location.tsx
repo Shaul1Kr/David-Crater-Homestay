@@ -1,15 +1,17 @@
 import styled from "styled-components";
-import Bed from "../assets/Pictures/Bed2.webp";
+import LocationImg from "../../assets/Pictures/Location.webp";
 
 const RoomContainer = styled.div`
   display: flex;
 `;
 
 const RoomImgWrapper = styled.div`
-  padding: 3rem 8rem;
+  padding: 0 4rem;
   gap: 1rem;
   display: grid;
   justify-items: center;
+  align-items: center;
+  background-color: rgb(56, 99, 112);
 `;
 
 const Text = styled.h3``;
@@ -28,21 +30,22 @@ const RoomsButton = styled.button`
   color: white;
 `;
 
-const BookARooms = () => {
+const Location = () => {
   return (
     <RoomContainer>
-      <RoomBed src={Bed} />
       <RoomImgWrapper>
+        <h1>LOCATION</h1>
         <Text>
-          From shared dorms to private rooms and family accommodation we have
-          the right room for you. We offer a wide range of adaptable room sizes
-          to accommodate any arrangement you may need. You can choose from a
-          simple single room, a spacious double, or a large family bedroom.
+          We are conveniently located with easy access to public and private
+          transport, and close to the centre of town. We can help you arrange
+          transport to your destination. And we offer a pick-up service to and
+          from Kilimanjaro and Arusha airports.
         </Text>
         <RoomsButton>Book Now</RoomsButton>
       </RoomImgWrapper>
+      <RoomBed src={LocationImg} />
     </RoomContainer>
   );
 };
 
-export default BookARooms;
+export default Location;

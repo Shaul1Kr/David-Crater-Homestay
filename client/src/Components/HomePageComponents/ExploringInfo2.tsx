@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import ExploringWrapper from "./ExploringWrapper";
-import Elephent from "../assets/Pictures/Elephent.webp";
-import Car from "../assets/Pictures/Car.webp";
+import Elephent from "../../assets/Pictures/Elephent.webp";
+import Car from "../../assets/Pictures/Car.webp";
 
 const ExploringContainer = styled.div`
   display: flex;

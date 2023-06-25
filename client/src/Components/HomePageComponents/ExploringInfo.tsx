@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import ExploringWrapper from "./ExploringWrapper";
-import Pool from "../assets/Pictures/Pool.webp";
-import Bar from "../assets/Pictures/Bar.webp";
+import Pool from "../../assets/Pictures/Pool.webp";
+import Bar from "../../assets/Pictures/Bar.webp";
 
 const ExploringContainer = styled.div`
   display: flex;

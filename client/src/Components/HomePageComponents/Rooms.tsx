@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Leafs from "../assets/Pictures/Leafs.webp";
-import Bed from "../assets/Pictures/Bed1.webp";
+import Leafs from "../../assets/Pictures/Leafs.webp";
+import Bed from "../../assets/Pictures/Bed1.webp";
 
 const RoomContainer = styled.div`
   display: flex;

@@ -1,11 +1,11 @@
-import Book from "../Components/Book";
-import ChangingImg from "../Components/ChangingImg";
+import Book from "../Components/HomePageComponents/Book";
+import ChangingImg from "../Components/HomePageComponents/ChangingImg";
 import styled from "styled-components";
-import Rooms from "../Components/Rooms";
-import BookARooms from "../Components/BookARoom";
-import ExploringInfo from "../Components/ExploringInfo";
-import Location from "../Components/Location";
-import ExploringInfo2 from "../Components/ExploringInfo2";
+import Rooms from "../Components/HomePageComponents/Rooms";
+import BookARooms from "../Components/HomePageComponents/BookARoom";
+import ExploringInfo from "../Components/HomePageComponents/ExploringInfo";
+import Location from "../Components/HomePageComponents/Location";
+import ExploringInfo2 from "../Components/HomePageComponents/ExploringInfo2";
 
 const Page = styled.div`
   width: 100%;

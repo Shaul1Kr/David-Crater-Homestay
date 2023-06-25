@@ -1,5 +1,7 @@
+import TitleSection from "../Components/RoomPageComponents/TitleSection";
+
 const RoomsPage = () => {
-  return <p>sdfsffsf</p>;
+  return <TitleSection />;
 };
 
 export default RoomsPage;

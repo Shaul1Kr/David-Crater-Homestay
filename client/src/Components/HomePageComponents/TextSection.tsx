@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import TripAdvisor from "../assets/Pictures/TripAdvisorReviews_PNG.png";
+import TripAdvisor from "../../assets/Pictures/TripAdvisorReviews_PNG.png";
 
 const TextImgContainer = styled.div`
   display: flex;
