@@ -6,10 +6,12 @@ const RoomContainer = styled.div`
 `;
 
 const RoomImgWrapper = styled.div`
-  padding: 3rem 8rem;
+  padding: 0 4rem;
   gap: 1rem;
   display: grid;
   justify-items: center;
+  align-items: center;
+  background-color: rgb(56, 99, 112);
 `;
 
 const Text = styled.h3``;
