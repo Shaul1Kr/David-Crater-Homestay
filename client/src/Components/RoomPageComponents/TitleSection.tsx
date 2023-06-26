@@ -6,7 +6,7 @@ const BlueContainer = styled.div`
   font-weight: 400;
   color: white;
   text-align: center;
-  padding: 0px 26rem;
+  padding: 4rem 26rem;
 `;
 
 const Title = styled.h1``;
