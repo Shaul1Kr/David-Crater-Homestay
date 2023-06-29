@@ -6,10 +6,12 @@ const BlueContainer = styled.div`
   font-weight: 400;
   color: white;
   text-align: center;
-  padding: 4rem 26rem;
+  padding: 4rem 35rem;
 `;
 
-const Title = styled.h1``;
+const Title = styled.h1`
+  margin-bottom: 3rem;
+`;
 
 const Line = styled.div`
   background-color: white;
@@ -18,9 +20,13 @@ const Line = styled.div`
   justify-self: center;
 `;
 
-const Paragraph = styled.p``;
+const Paragraph = styled.p`
+  margin: 1rem 0;
+`;
 
-const BigParagraph = styled.p``;
+const BigParagraph = styled.p`
+  margin: 1rem 0;
+`;
 
 const TitleSection = () => {
   return (

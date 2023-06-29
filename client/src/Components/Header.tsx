@@ -26,7 +26,10 @@ const Logo = styled.img`
   width: 20%;
 `;
 
-const Buttons = styled.div``;
+const Buttons = styled.div`
+  display: flex;
+  gap: 2rem;
+`;
 
 const Button = styled.button`
   border: 0;

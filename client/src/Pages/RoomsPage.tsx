@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import TitleSection from "../Components/RoomPageComponents/TitleSection";
+import TitleSection from "../Components/TitleSection";
 import RoomInfo from "../Components/RoomPageComponents/RoomInfo";
+import RoomImg from "../Components/RoomPageComponents/RoomImg";
 
 const Page = styled.div`
   width: 100%;
@@ -11,6 +12,7 @@ const RoomsPage = () => {
     <Page>
       <TitleSection />
       <RoomInfo />
+      <RoomImg />
     </Page>
   );
 };
