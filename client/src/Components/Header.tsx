@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const buttons = [
   { label: "Home", link: "" },
   { label: "Rooms", link: "Rooms" },
-  { label: "Tours & Safaris", link: "" },
+  { label: "Tours & Safaris", link: "ToursAndSafaris" },
   { label: "Book", link: "" },
   { label: "More", link: "" },
 ];
