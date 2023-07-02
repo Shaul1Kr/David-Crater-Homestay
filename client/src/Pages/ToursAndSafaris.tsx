@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import TitleSection from "../Components/TitleSection";
-import Information from "../Components/ToursAndSafarisComponents/Information";
+import InformationWrapper from "../Components/ToursAndSafarisComponents/InformationWrapper";
 
 const Page = styled.div`
   width: 100%;
@@ -13,7 +13,7 @@ const ToursAndSafaris = () => {
   return (
     <Page>
       <TitleSection />
-      <Information />
+      <InformationWrapper />
     </Page>
   );
 };
