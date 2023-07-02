@@ -7,7 +7,6 @@ const buttons = [
   { label: "Rooms", link: "Rooms" },
   { label: "Tours & Safaris", link: "ToursAndSafaris" },
   { label: "Book", link: "" },
-  { label: "More", link: "" },
 ];
 
 const Header = styled.div`
