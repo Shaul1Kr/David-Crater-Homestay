@@ -6,6 +6,7 @@ import Layout from "./Layout.tsx";
 import HomePage from "./Pages/HomePage.tsx";
 import RoomsPage from "./Pages/RoomsPage.tsx";
 import ToursAndSafaris from "./Pages/ToursAndSafaris.tsx";
+import Book from "./Pages/BookPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/ToursAndSafaris",
         element: <ToursAndSafaris />,
+      },
+      {
+        path: "/Book",
+        element: <Book />,
       },
     ],
   },
