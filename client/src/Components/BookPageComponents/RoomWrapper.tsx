@@ -66,7 +66,13 @@ const RoomWrapper = ({ image, title, subTitle, price }: RoomWrapperProps) => {
 
   return (
     <Container>
-      <RoomDialog dialogState={dialogState} />
+      <RoomDialog
+        dialogState={dialogState}
+        setDialogState={setDialogState}
+        image={image}
+        title={title}
+        price={price}
+      />
       <RoomImg src={image} />
       <DetailWrapper>
         <Title>{title}</Title>
