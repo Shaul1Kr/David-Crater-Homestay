@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import { useState } from "react";
 import { FaWifi } from "react-icons/fa";
 import { FaShower } from "react-icons/fa";
 import { FaRegCheckCircle } from "react-icons/fa";
+import RoomDialog from "./RoomDialog";
 
 const Container = styled.div`
   display: flex;
@@ -60,8 +62,11 @@ interface RoomWrapperProps {
 }
 
 const RoomWrapper = ({ image, title, subTitle, price }: RoomWrapperProps) => {
+  const [dialogState, setDialogState] = useState(false);
+
   return (
     <Container>
+      <RoomDialog dialogState={dialogState} />
       <RoomImg src={image} />
       <DetailWrapper>
         <Title>{title}</Title>
@@ -77,7 +82,13 @@ const RoomWrapper = ({ image, title, subTitle, price }: RoomWrapperProps) => {
           <From>From</From>
           <Price>{price}</Price>
         </PriceContainer>
-        <Button>More Info</Button>
+        <Button
+          onClick={() => {
+            setDialogState((current) => !current);
+          }}
+        >
+          More Info
+        </Button>
       </PriceWrapper>
     </Container>
   );
