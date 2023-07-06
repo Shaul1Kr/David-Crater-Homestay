@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Dispatch, SetStateAction } from "react";
-import { Link } from "react-router-dom";
+import { Dispatch, SetStateAction, useState } from "react";
+import OrderDialog from "./OrderDialog";
 
 const RoomDialogContainer = styled.dialog`
   position: fixed;
@@ -18,7 +18,7 @@ const RoomDialogWraper = styled.div`
   position: absolute;
   background-color: white;
   left: 35%;
-  top: 30%;
+  top: 20%;
   padding: 1rem;
 `;
 
@@ -90,46 +90,57 @@ const RoomDialog = ({
   title,
   price,
 }: RoomDialogProps) => {
+  const [subContinue, setSubContinue] = useState(false);
   return (
     <RoomDialogContainer open={dialogState}>
       <RoomDialogWraper>
-        <OrderContainer>
-          <TitleContainer>
-            <Title>Order Summary</Title>
-          </TitleContainer>
-          <ImgContainer>
-            <img src={image} />
-          </ImgContainer>
-          <OrderDetailContainer>
-            <RoomTypeContainer>
-              <RoomType>Room Type: {title}</RoomType>
-            </RoomTypeContainer>
-            <DatesContainer>
-              <Dates>Dates: asdsad</Dates>
-            </DatesContainer>
-            <NumOfNightsContainer>
-              <NumOfNights>No. of nights: asdasd</NumOfNights>
-            </NumOfNightsContainer>
-            <GuestsContainer>
-              <Guests>Guests: asdasds</Guests>
-            </GuestsContainer>
-            <TotalPriceContainer>
-              <TotalPrice>Total: {price}</TotalPrice>
-            </TotalPriceContainer>
-          </OrderDetailContainer>
-        </OrderContainer>
-        <ButtonWrapper>
-          <Button
-            onClick={() => {
-              setDialogState(false);
-            }}
-          >
-            Cancle
-          </Button>
-          <Button>
-            <Link to={"/"}>Continue</Link>
-          </Button>
-        </ButtonWrapper>
+        {!subContinue ? (
+          <>
+            <OrderContainer>
+              <TitleContainer>
+                <Title>Order Summary</Title>
+              </TitleContainer>
+              <ImgContainer>
+                <img src={image} />
+              </ImgContainer>
+              <OrderDetailContainer>
+                <RoomTypeContainer>
+                  <RoomType>Room Type: {title}</RoomType>
+                </RoomTypeContainer>
+                <DatesContainer>
+                  <Dates>Dates: asdsad</Dates>
+                </DatesContainer>
+                <NumOfNightsContainer>
+                  <NumOfNights>No. of nights: asdasd</NumOfNights>
+                </NumOfNightsContainer>
+                <GuestsContainer>
+                  <Guests>Guests: asdasds</Guests>
+                </GuestsContainer>
+                <TotalPriceContainer>
+                  <TotalPrice>Total: {price}</TotalPrice>
+                </TotalPriceContainer>
+              </OrderDetailContainer>
+            </OrderContainer>
+            <ButtonWrapper>
+              <Button
+                onClick={() => {
+                  setDialogState(false);
+                }}
+              >
+                Cancle
+              </Button>
+              <Button
+                onClick={() => {
+                  setSubContinue(true);
+                }}
+              >
+                Continue
+              </Button>
+            </ButtonWrapper>
+          </>
+        ) : (
+          <OrderDialog setSubContinue={setSubContinue} />
+        )}
       </RoomDialogWraper>
     </RoomDialogContainer>
   );
