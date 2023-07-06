@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Dispatch, SetStateAction } from "react";
+import { Link } from "react-router-dom";
 
 const RoomDialogContainer = styled.dialog`
   position: fixed;
@@ -18,17 +19,29 @@ const RoomDialogWraper = styled.div`
   background-color: white;
   left: 35%;
   top: 30%;
+  padding: 1rem;
 `;
 
 const OrderContainer = styled.div`
   display: grid;
+  justify-items: center;
+`;
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+`;
+
+const TitleContainer = styled.div`
+  margin-bottom: 1rem;
 `;
 
 const ImgContainer = styled.div``;
 
 const OrderDetailContainer = styled.div``;
-
-const TitleContainer = styled.div``;
 
 const RoomTypeContainer = styled.div``;
 
@@ -52,7 +65,15 @@ const Guests = styled.p``;
 
 const TotalPrice = styled.p``;
 
-const Button = styled.button``;
+const Button = styled.button`
+  padding: 0.5rem;
+  background-color: #4848b3;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+`;
 
 interface RoomDialogProps {
   dialogState: boolean;
@@ -97,13 +118,18 @@ const RoomDialog = ({
             </TotalPriceContainer>
           </OrderDetailContainer>
         </OrderContainer>
-        <Button
-          onClick={() => {
-            setDialogState(false);
-          }}
-        >
-          Cancle
-        </Button>
+        <ButtonWrapper>
+          <Button
+            onClick={() => {
+              setDialogState(false);
+            }}
+          >
+            Cancle
+          </Button>
+          <Button>
+            <Link to={"/"}>Continue</Link>
+          </Button>
+        </ButtonWrapper>
       </RoomDialogWraper>
     </RoomDialogContainer>
   );
