@@ -17,3 +17,16 @@ model Rooms {
   createdAt DateTime @default(now())
   roomName String @db.VarChar(255)
 }
+
+model Orders {
+  id      Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  arrivalDate DateTime?
+  departureDate DateTime?
+  firstName String @db.VarChar(255)
+  lastName String @db.VarChar(255)
+  email String @db.VarChar(255)
+  phone String @db.VarChar(255)
+  country String @db.VarChar(255)
+  requests String @db.VarChar(255)
+}
