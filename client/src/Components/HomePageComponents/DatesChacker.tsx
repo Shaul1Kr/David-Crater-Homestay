@@ -70,7 +70,7 @@ const DatesChacker = () => {
         />
       </CheckContainer>
       <CheckContainer>
-        <Label>Check in</Label>
+        <Label>Check out</Label>
         <DatePicker
           showIcon
           dateFormat="dd/MM/yy"
